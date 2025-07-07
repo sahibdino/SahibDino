@@ -1,0 +1,149 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+    background-color: #f8f9fa; /* Light Gray */
+    color: #212529; /* Neutral dark gray */
+    line-height: 1.5;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0056D2; /* Deep Royal Blue */
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #1A73E8; /* Slightly lighter blue */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #FFC107; /* Warm Amber */
+    color: #000000;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #e0a800; /* Darker amber */
+    color: #000000;
+}
+
+.btn-outline-primary {
+    color: #0056D2;
+    border-color: #0056D2;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: #0056D2;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1C1F26; /* Dark Gray */
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero img {
+    border: 4px solid #42a5f5; /* Light Blue accent */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Section backgrounds */
+.section-light {
+    background-color: #f8f9fa; /* Very Light Gray */
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+    color: #0D6EFD; /* Bootstrap default link blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #0B5ED7; /* Slightly darker */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0056D2; /* Deep Royal Blue */
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Accordion enhancements */
+.accordion-button:not(.collapsed) {
+    color: #0056D2;
+    background-color: #e9f1fb; /* Light Blue background */
+    font-weight: 600;
+}
+
+.accordion-button:hover {
+    background-color: #d0e2fb;
+}
+
+/* List styling */
+ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Optional hover effect on list items */
+ul li:hover {
+    background-color: #f0f8ff;
+    cursor: default;
+}

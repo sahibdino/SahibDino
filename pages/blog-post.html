@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Understanding Flexbox in CSS | Sahib Dino</title>
+    <link rel="icon" href="../assets/images/sahib.jpeg" type="image/jpeg" />
+    <meta name="description" content="Learn how CSS Flexbox works with examples and best practices." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Understanding Flexbox in CSS" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Sahib Dino</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavBlogPost" aria-controls="navbarNavBlogPost" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavBlogPost">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <article>
+            <h1 class="mb-3">Understanding Flexbox in CSS</h1>
+            <p class="text-muted">Published on April 1, 2024</p>
+            <hr />
+
+            <section class="mb-4">
+                <p>Flexbox is a powerful layout module in CSS that allows you to design flexible responsive layout structures without using float or positioning.</p>
+                <h2>Basics of Flexbox</h2>
+                <p>The main idea behind the flex layout is to give the container the ability to alter its items' width/height to best fill the available space.</p>
+                <img src="images/flexbox-example.png" alt="Flexbox Example" class="img-fluid rounded mb-4" />
+                <h2>Common Properties</h2>
+                <ul>
+                    <li><strong>display: flex;</strong> - Defines a flex container.</li>
+                    <li><strong>flex-direction</strong> - Defines the direction of the flex items.</li>
+                    <li><strong>justify-content</strong> - Defines alignment along the main axis.</li>
+                    <li><strong>align-items</strong> - Defines alignment along the cross axis.</li>
+                </ul>
+                <p>Using these properties, you can create complex layouts easily.</p>
+            </section>
+
+            <section class="mb-4">
+                <h3>Share this post:</h3>
+                <a href="https://twitter.com/intent/tweet?text=Understanding%20Flexbox%20in%20CSS&url=https://example.com/blog-post.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary me-2">Twitter</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/blog-post.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary me-2">Facebook</a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog-post.html&title=Understanding%20Flexbox%20in%20CSS" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">LinkedIn</a>
+            </section>
+
+            <a href="blog.html" class="btn btn-secondary mt-4">← Back to Blog</a>
+        </article>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2024 Sahib Dino. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
